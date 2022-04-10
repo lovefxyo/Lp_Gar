@@ -1,0 +1,133 @@
+DataGraphPath: 
+  VFile : ./dataset/dblp_1980/dblp_v.csv
+  EFile : ./dataset/dblp_1980/dblp_e.csv
+ExpandRound: 20
+J: 1
+SupportBound: 100
+TimeLimit: 3000.0
+TimeLimitPerSupp: 0.5
+ConstantFreqBound: 0.01
+PatternVertexLimit: 5
+LiteralTypes:
+  - constant_literal
+  - variable_literal
+  - edge_literal
+Restrictions:
+ # - variable_literal_only_between_connected_vertexes
+ # - edge_literal_only_between_2_hop_connected_vertexes
+  #- literals_connected
+  #- pattern_without_loop
+TimeLogFile:  ./fxytime.timelog_8_nodes
+OutputGarDir: ./fxygar
+SpecifiedRhsLiteralSet:
+#####################
+  - Type: edge_literal
+    XLabel: 3
+    EdgeLabel: 1007
+    YLabel: 4
+#####################
+  - Type: edge_literal
+    XLabel: 2
+    EdgeLabel: 1002
+    YLabel: 6
+#####################y(Fv)
+  - Type: edge_literal
+    XLabel: 2
+    EdgeLabel: 1005
+    YLabel: 8
+#####################
+  - Type: edge_literal
+    XLabel: 2
+    EdgeLabel: 1015
+    YLabel: 2
+#####################
+  - Type: edge_literal
+    XLabel: 2
+    EdgeLabel: 1003
+    YLabel: 3
+#####################
+SpecifiedEdgeTypeSet:
+  - SrcLabel: 2
+    EdgeLabel: 1003
+    DstLabel: 3
+  # count : 53208
+  - SrcLabel: 3
+    EdgeLabel: 1007
+    DstLabel: 4
+  # count : 46283
+  - SrcLabel: 2
+    EdgeLabel: 1015
+    DstLabel: 2
+  # count : 35596
+  - SrcLabel: 2
+    EdgeLabel: 1002
+    DstLabel: 6
+  # count : 35266
+  - SrcLabel: 2
+    EdgeLabel: 1006
+    DstLabel: 10
+  # count : 35112
+  - SrcLabel: 2
+    EdgeLabel: 1001
+    DstLabel: 5
+  # count : 34978
+  - SrcLabel: 2
+    EdgeLabel: 1005
+    DstLabel: 8
+  # count : 26505
+  - SrcLabel: 2
+    EdgeLabel: 1004
+    DstLabel: 7
+  # count : 22649
+  - SrcLabel: 2
+    EdgeLabel: 1003
+    DstLabel: 2
+  # count : 34978
+  - SrcLabel: 2
+    EdgeLabel: 1017
+    DstLabel: 3
+  # count : 413
+  - SrcLabel: 2
+    EdgeLabel: 1001
+    DstLabel: 1
+  # count : 391
+  - SrcLabel: 2
+    EdgeLabel: 1013
+    DstLabel: 10
+  # count : 385
+  - SrcLabel: 10
+    EdgeLabel: 1002
+    DstLabel: 6
+  # count : 254
+  - SrcLabel: 5
+    EdgeLabel: 1009
+    DstLabel: 1
+  #count:189
+  - SrcLabel: 5
+    EdgeLabel: 1014
+    DstLabel: 1
+  #count:145
+  - SrcLabel: 3
+    EdgeLabel: 1008
+    DstLabel: 1
+  - SrcLabel: 1
+    EdgeLabel: 1009
+    DstLabel: 1
+  #count:60
+  - SrcLabel: 1
+    EdgeLabel: 1014
+    DstLabel: 1
+  #count:59
+  - SrcLabel: 3
+    EdgeLabel: 1010
+    DstLabel: 12
+  #count:59
+  - SrcLabel: 3
+    EdgeLabel: 1011
+    DstLabel: 2
+  #count:45
+  - SrcLabel: 12
+    EdgeLabel: 1012
+    DstLabel: 1
+  #count:27
+
